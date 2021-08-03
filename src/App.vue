@@ -1,14 +1,18 @@
-<template>
-  <h1>osc test</h1>
-</template>
-
 <script lang="ts">
 import { defineComponent } from 'vue';
+import useOsc from '@/useOsc';
 
 export default defineComponent({
   name: 'App',
+  setup() {
+    useOsc();
+  },
 });
 </script>
+
+<template>
+  <h1>osc test</h1>
+</template>
 
 <style lang="scss">
 #app {
